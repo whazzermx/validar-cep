@@ -6,6 +6,10 @@ from cep.exc import TransferNotFoundError
 
 app = FastAPI()
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 class Pago(BaseModel):
     fecha: str
     clave_rastreo: str
