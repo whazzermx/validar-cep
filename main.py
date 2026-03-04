@@ -1,4 +1,8 @@
-from fastapi import FastAPI                                                                    from pydantic import BaseModel                                                                 from datetime import date                                                                      from cep import Transferencia                                                                  from cep.exc import TransferNotFoundError
+from fastapi import FastAPI
+from pydantic import BaseModel
+from datetime import date
+from cep import Transferencia
+from cep.exc import TransferNotFoundError
 
 app = FastAPI()
 
